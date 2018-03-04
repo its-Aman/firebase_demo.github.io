@@ -18,8 +18,8 @@ export class SongsListPage {
     afDb: AngularFireDatabase, public alertCtrl: AlertController, public actionSheetCtrl: ActionSheetController) {
     // this.songs = afDb.list('songs').valueChanges();
     this.songs = afDb.database.ref('songs');
-    console.log('songs are' ,this.songs);
-    
+    console.log('songs are', this.songs);
+
   }
 
   addSong() {
